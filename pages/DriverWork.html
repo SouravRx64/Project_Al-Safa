@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Al-safa Travels:Database</title>
+<link rel="icon" href="../images/favicon.jpeg" type="image/jpeg" />
+<link href="../CSS/StyleDriverWork.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+</head>
+<body>
+<div class="maindiv">
+        <div class="topmost"> 
+            <ul> 
+                <li><a href="../pages/logout.php" style="color:red;">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log Out</a></li><br><br>
+                <li><a href="UpdateDB.html" >Duty Records</a></li>
+                    <li><a href="DriverRecord.html">Driver Records</a></li>
+            </ul>
+        </div>
+   <header>
+            <div>
+                <ul>
+                    <div class="logo" style="margin-left:-100px;">
+                    <li><a><img src="../images/logo.jpeg" alt="Al-Safa"></a></li>
+                    </div>  
+                    <li><a href="DutyEntry.html" >Duty Entry</a></li>
+                    <li><a href="DriverEntry.html"  >Register Driver</a></li>
+                    <li><a href="DriverWork.html"  class="active">Driver's Work</a></li>
+                    <li><a href="Vendor.html" >Vendor Details</a></li>
+                    
+                </ul>
+            </div>
+        </header>
+<!--HTML Form -->
+<div class="form_div">
+
+<form action="driverwrk.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+<h2>Driver's Work</h2>
+<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cab No.:</label>
+<input class="input" name="driver" type="text" value=""><br>
+<label>&nbsp;&nbsp;&nbsp;&nbsp;Date From:</label>
+<input class="input" type="date" value="" id="myDate" name="datef">
+<script>
+            function myFunction() {
+            var x = document.getElementById("myDate").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+</script>
+<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date To:</label>
+<input class="input" type="date" value="" id="myDate" name="datet">
+<script>
+            function myFunction() {
+            var x = document.getElementById("myDate").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+</script><br>
+<br>
+<input class="submit" name="submit" type="submit" value="Show The Details">
+<input class="submit" name="reset" type="reset" value="Reset">
+</form>
+</div>
+</div>
+</body>
+</html>

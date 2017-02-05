@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Al-Safa Travels</title>
+        <link rel="icon" href="../images/favicon.jpeg" type="image/jpeg" />
+		<meta charset="utf-8">
+
+		<!--Style Sheet-->
+		  <link rel="stylesheet" type="text/css" href="../CSS/StyleContact.css">
+        
+		<!-- To make website compatible with all versions of Internet Explorer-->
+		<script src="../js/html5shiv.js"></script>   
+
+		<!-- Font-Awesome-->
+		<link rel="stylesheet" href="../CSS/font-awesome-4.6.3/css/font-awesome.min.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        
+        <!--Google Maps-->
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCcGafZ3kQaKIV_LgLjmS-G9OtX6yZyhrs"></script>
+
+        <script>
+            var myCenter=new google.maps.LatLng(13.073141, 77.502889);
+
+            function initialize()
+            {
+                var mapProp = {
+                center:myCenter,
+                zoom:15,
+                panControl:true,
+                zoomControl:true,
+                mapTypeControl:true,
+                scaleControl:true,
+                streetViewControl:true,
+                overviewMapControl:true,
+                rotateControl:true,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+
+                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                var marker=new google.maps.Marker({
+                position:myCenter,
+            });
+
+                marker.setMap(map);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+	</head>
+	<body>
+        <div class="topbar">
+        <div class="topmost"> 
+            <ul> 
+                    <li><a href="Corporate.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Corporate World</a></li>
+                    <li><a href="Login.html">Log In</a></li><br><br>
+                    <li style="font-size:19px;font-family: 'Pacifico', cursive;"><a href="Booking.html">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New Booking</a></li>
+                </ul>
+        </div>
+        <header>
+            <div>
+                <ul>
+                    <div class="logo">
+                    <li><a href="../index.html"><img src="../images/logo.jpeg" alt="Al-Safa"></a></li>
+                    </div>  
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Tarrifs.html">Tarrifs</a></li>
+                    <li><a href="Places.html">Places To Visit</a></li>
+                    <li><a class="active" href="Contact.html">Contact Us</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="T&C.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </header>
+        </div>
+        <div id="content"><!-- Movable Content-->
+        <h1 class="subtitle">Contact Us</h1>
+            <section class="new">
+            <div class="box" style="margin-left:225px;">
+                <div class="ico">
+                <i class="fa fa-phone-square"; style="font-size:50px; align=center;"></i>
+                </div>
+                <h2 class="box-head">Contact No.</h2>
+				<p class="service-content" style="font-family: 'Alegreya', serif;
+                font-size:18px;">+91 9886606565</p>
+                <p class="service-content" style="font-family: 'Alegreya', serif;
+                font-size:18px;">+91 9886697744</p>
+            </div>
+                
+                
+            <div class="box">
+                <div class="ico">
+                <i class="fa fa-envelope"style="font-size:50px; align=center;"></i>
+                </div>
+            <h2 class="box-head">E-Mail ID</h2>
+                <p class="service-content" style="font-family: 'Alegreya', serif;
+                font-size:19px;">naushadsheikh@alsafa.in</p>
+                <p class="service-content" style="font-family: 'Alegreya', serif;
+                font-size:18px;">alsafa.travelss@gmail.com</p>					
+            </div>
+            <div class="box">
+                <div class="ico">
+                <i class="fa fa-location-arrow"style="font-size:50px; align=center;"></i>
+                </div>
+            <h2 class="box-head">Office Address</h2>
+                <p class="service-content" style="font-family: 'Alegreya', serif;
+                font-size:18px;">#2,TMR Complex,, Hesarghatta Main Rd, Geleyara Balaga Layout, Jalahalli West, Bengaluru, Karnataka 560090, India</p>			
+            </div><br>
+                <div class="box" style="width:500px;height:410px;font-weight:600;margin-left:100px;">
+            <h2 class="box-head">Feedback/Suggestion Form</h2>
+                <div style="font-family: 'Alegreya', serif;">
+                    <form action="mail.php" method="post"><br>
+                    Name* : <input type="text" name="name" id="name" required>&nbsp;
+                    Email : <input type="text" name="email" id="email">&nbsp;<br><br><br>
+                    Phone* : <input type="text" name="phone" id="phone" required>
+                    Website : <input type="text" name="website" id="website"><br><br>
+                    <br/>
+                    <p>Message*</p><textarea name="message" rows="6" cols="60" required></textarea><br />
+                    <input type="submit" value="submit"><input type="reset" value="Clear">
+                    </div>
+                </form>			
+            </div><br>
+                
+            </section>
+            <div style="margin-left:850px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="ico" style="margin-right:60px; color:black;">
+                <i class="fa fa-map-marker"style="font-size:50px; align=left;"></i>
+                     <h2 class="box-head" style="color:black;">Find Us</h2>
+                </div>
+               
+                <div id="googleMap"style="width:450px;height:390px;"></div>
+            </div><br><br><br><br><br>
+            <footer style="background-color:black;">
+                <div id="footer-widgets" style="color:white;">
+                    <div class="footer-widget first-clmn">
+                        <h5>About Us</h5>
+                        <p style="text-align:justify; color:grey;">We guarantee to provide both on-road and online safety for our customers. For on-road safety, we provide new, clean and well maintained cars and hire only courteous and experienced chauffeurs who are well versed with regional routes. For online safety, the most secure industrial practices for ensuring the privacy of your information are used. </p>
+                    </div>
+                    <div class="footer-widget second-clmn">
+                        <h5 style="margin-left:10px;">Quick Links</h5>
+                        <ul>
+                            
+                            <li>
+                                <a href="Aboutus.html">About Us</a>
+                            </li>
+                            <li><br>
+                                <a href="Services.html">Service</a>
+                            </li><br>
+							<li>
+                                <a href="Tarrifs.html">Tarrifs</a>
+                            </li>
+                            <li><br>
+                                <a href="Places.html">Places To Visit</a>
+                            </li>
+                            <li><br>
+                                <a href="Contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget third-clmn">
+                      <div class="credits">Copyright @ alsafatravels.in 2016. Powered by SCAnF Web Developers</div>
+                    </div>
+                         
+                    <div class="footer-widget second-clmn2">
+                      <h5 style="margin-left:10px;">Developers</h5>
+                        <ul>  
+                            <li>
+                                <a href="https://www.facebook.com/sourav.roy.1804">Sourav Roy</a>
+                            </li>
+                            <li><br>
+                                <a href="https://www.facebook.com/profile.php?id=100009327082700">Chandan Singh</a>
+                            </li>
+							<li><br>
+                                <a href="https://www.facebook.com/akanksha.arun.98">Akanksha Arun</a>
+                            </li><br>
+                            <li>
+                                <a href="https://www.facebook.com/umme.fiza.92">Umme Fiza</a>
+                            </li>
+                            <li>
+                        </ul>
+                    </div>
+                     <div class="footer-widget second-clmn1">
+                      <h5 style="margin-left:10px;">Help</h5>
+                        <ul>  
+                            <li>
+                                <a href="Contact.html">Contact Us</a>
+                            </li>
+							<li><br>
+                                <a href="T&C.html">T & C</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- SOCIAL ICONS -->
+                 <ul class="social-icons">
+                    <li>
+                       <h5 style="margin-bottom: -20px;">Get Social With Us!!!</h5>
+                    </li><br>
+                    <li>
+                        <a href="https://www.facebook.com/Al-Safa-Travels-1677573049236378/">
+                            <img class="social-icon" src="../images/fb.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/nshaikh65653">
+                            <img class="social-icon" src="../images/tw.png" alt="Twitter">
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="https://www.linkedin.com/in/naushad-khan-049821124?trk=hp-identity-name">
+                            <img class="social-icon" src="../images/ld.png"alt="Linked in">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="
+https://business.google.com/b/117472883699282377749/dashboard/l/08422173877611127763?hl=en-GB
+">
+                            <img class="social-icon" src="../images/gp.png" alt="Google+">
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div><!-- End of Movable Content-->
+	</body>
+
+</html>

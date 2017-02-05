@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Al-Safa Travels</title>
+        <link rel="icon" href="./images/favicon.jpeg" type="image/jpeg" />
+		<meta charset="utf-8">
+        <meta name="viewport" >
+
+		<!--Style Sheet-->    
+		  <link rel="stylesheet" type="text/css" href="./CSS/StyleIndex.css">
+        
+		<!-- To make website compatible with all versions of Internet Explorer-->
+		<script src="./js/html5shiv.js"></script>
+            
+       <!--Google Maps-->
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCcGafZ3kQaKIV_LgLjmS-G9OtX6yZyhrs"></script>
+
+        <script>
+            var myCenter=new google.maps.LatLng(13.073141, 77.502889);
+
+            function initialize()
+            {
+                var mapProp = {
+                center:myCenter,
+                zoom:15,
+                panControl:true,
+                zoomControl:true,
+                mapTypeControl:true,
+                scaleControl:true,
+                streetViewControl:true,
+                overviewMapControl:true,
+                rotateControl:true,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+
+                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                var marker=new google.maps.Marker({
+                position:myCenter,
+            });
+
+                marker.setMap(map);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+		<!-- Font-Awesome-->
+		<link rel="stylesheet" href="./CSS/font-awesome-4.6.3/css/font-awesome.min.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+	</head>
+	<body>
+        <header>
+            <div class="topbar">
+                <div class="topmost"> 
+                <ul> 
+                    <li><a href="./pages/Corporate.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Corporate World</a></li>
+                    <li><a href="./pages/Login.html">Log In</a></li><br><br>
+                    <li style="font-size:19px;font-family: 'Pacifico', cursive;"><a href="./pages/Booking.html">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; New Booking</a></li>
+                </ul>
+                </div>  
+                <ul>
+                    <div class="logo">
+                    <li><a href="index.html"><img src="./images/logo.jpeg" alt="Al-Safa"></a></li>
+                    </div>  
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="./pages/Services.html">Services</a></li>
+                    <li><a href="./pages/Tarrifs.html">Tarrifs</a></li>
+                    <li><a href="./pages/Places.html">Places To Vist</a></li>
+                    <li><a href="./pages/Contact.html">Contact Us</a></li>
+                    <li><a href="./pages/Aboutus.html">About Us</a></li>
+                    <li><a href="./pages/T&C.html">Terms & Conditions</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+<!-- Starting of movable Content-->
+      <div id="content">
+            <div style="opacity:0.9;">
+                <ul class="second">
+            <li><a href="./pages/Tarrifs.html#airport">Airport Service</a></li>
+            <li><a href="./pages/Tarrifs.html#citycab">City Cab</a></li>
+            <li><a href="./pages/Corporate.html">Corporate Cab</a></li>
+            <li><a href="./pages/Tarrifs.html#outstation">Outstation Packages</a></li>
+            <li><a href="./pages/Booking.html">New Booking</a></li>
+            <li></li>
+        </ul>
+        </div>
+        </header>
+        <div class="slide">
+            <img class="mySlides" src="./images/s1.jpg" height="570" width="1350">
+            <img class="mySlides" src="./images/s2.png" height="570" width="1350">
+            <img class="mySlides" src="./images/s3.jpg" height="570" width="1350">
+            <img class="mySlides" src="./images/s4.jpg" height="570" width="1350">
+       
+        <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 2 seconds
+                }
+        </script>
+             </div>
+        <div class="icon">
+             <i class="fa fa-heart-o"; style="font-size:50px; align=center;width:1350px;"></i>
+        </div>
+            
+            
+        <div class="welcome">
+            <p>Welcome to Al-Safa Travels.</p>
+        </div><br>
+           
+        <div class="container">
+            <div class="box1">
+                <i class="fa fa-thumbs-o-up" style="font-size:50px; align:center;color:grey#999999;"></i>
+                <p class="font">Convenience</p>
+                <p class="arrange">Book within seconds and get instant confirmations. Easy online payments or cash on delivery. Booking car rentals will never be a headache again!</p>
+            </div>
+            
+            
+            <div class="box2">
+                <i class="fa fa-check-square-o" style="font-size:50px; align:center;color:grey#999999;"></i>
+                <p class="font">Quality</p>
+                <p class="arrange">Our cars are audited for cleanliness, safety and comfort. Our drivers are well trained and reliable. Sit back and enjoy the Al-Safa experience!</p>
+            </div>
+         
+            
+            <div class="box3">
+                <i class="fa fa-inr" style="font-size:50px; align:center;color:grey#999999;"></i>
+                <p class="font">Control</p>
+                <p class="arrange">We have clear and transparent pricing listed online. Never haggle with drivers again on payments and be confident and assured of what you are being charged for! </p>
+            </div>
+            </div>
+        
+           <div class="container1" >
+            <div class="box4">
+                <i class="fa fa-phone" style="font-size:50px; align:center;color:grey#999999;"></i>
+                <p class="font1">+91 9886606565</p>
+                <p class="font1">+91 9886697744</p>
+            </div>
+            
+            
+            <div class="box5">
+                <i class="fa fa-envelope" style="font-size:50px; align:center;color:grey#999999;"></i>
+                <p class="font2">alsafa.travelss@gmail.com</p>
+                <p class="arrange">#2,TMR Complex,, Hesarghatta Main Rd, Geleyara Balaga Layout, Jalahalli West, Bengaluru, Karnataka 560090, India</p>
+            </div>
+            <div class="box6">
+                <i class="fa fa-map-marker" style="font-size:50px; align:center;color:grey#999999;"></i>
+                
+                <div id="googleMap"style="width:300px;height:220px;"></div>
+            </div>
+            </div>
+            <footer>
+                <div id="footer-widgets">
+                    <div class="footer-widget first-clmn">
+                        <h5>About Us</h5>
+                        <p style="text-align:justify;color:grey">We guarantee to provide both on-road and online safety for our customers. For on-road safety, we provide new, clean and well maintained cars and hire only courteous and experienced chauffeurs who are well versed with regional routes. For online safety, the most secure industrial practices for ensuring the privacy of your information are used. </p>
+                    </div>
+                    <div class="footer-widget second-clmn">
+                        <h5 style="margin-left:10px;color:white;">Quick Links</h5>
+                        <ul>
+                            
+                            <li>
+                                <a href="./pages/Aboutus.html">About Us</a>
+                            </li>
+                            <li><br>
+                                <a href="./pages/Services.html">Service</a>
+                            </li><br>
+							<li>
+                                <a href="./pages/Tarrifs.html">Tarrifs</a>
+                            </li>
+                            <li><br>
+                                <a href="./pages/Places.html">Places To Visit</a>
+                            </li>
+                            <li><br>
+                                <a href="./pages/Contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-widget third-clmn">
+                      <div class="credits">Copyright @ alsafatravels.in 2016. Powered by SCAnF Web Developers</div>
+                    </div>
+                         
+                    <div class="footer-widget second-clmn2">
+                      <h5 style="margin-left:10px;">Developers</h5>
+                        <ul>  
+                            <li>
+                                <a href="https://www.facebook.com/sourav.roy.1804">Sourav Roy</a>
+                            </li>
+                            <li><br>
+                                <a href="https://www.facebook.com/profile.php?id=100009327082700">Chandan Singh</a>
+                            </li>
+							<li><br>
+                                <a href="https://www.facebook.com/akanksha.arun.98">Akanksha Arun</a>
+                            </li><br>
+                            <li>
+                                <a href="https://www.facebook.com/umme.fiza.92">Umme Fiza</a>
+                            </li>
+                            <li>
+                        </ul>
+                    </div>
+                     <div class="footer-widget second-clmn1">
+                      <h5 style="margin-left:10px;">Help</h5>
+                        <ul>  
+                            <li>
+                                <a href="./pages/Contact.html">Contact Us</a>
+                            </li>
+							<li><br>
+                                <a href="./pages/T&C.html">T & C</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!-- SOCIAL ICONS -->
+                <ul class="social-icons">
+                    <li>
+                       <h5 style="margin-bottom: -20px;">Get Social With Us!!!</h5>
+                    </li><br>
+                    <li>
+                        <a href="https://www.facebook.com/Al-Safa-Travels-1677573049236378/">
+                            <img class="social-icon" src="./images/fb.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/nshaikh65653">
+                            <img class="social-icon" src="./images/tw.png" alt="Twitter">
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="https://www.linkedin.com/in/naushad-khan-049821124?trk=hp-identity-name">
+                            <img class="social-icon" src="./images/ld.png"alt="Linked in">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="
+https://business.google.com/b/117472883699282377749/dashboard/l/08422173877611127763?hl=en-GB
+">
+                            <img class="social-icon" src="./images/gp.png" alt="Google+">
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+                
+    
+        </div> <!-- End of Movable Content-->
+	</body>
+</html>
+        

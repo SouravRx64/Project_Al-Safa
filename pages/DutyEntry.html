@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Al-safa Travels:Database</title>
+<link rel="icon" href="../images/favicon.jpeg" type="image/jpeg" />
+<link href="../CSS/StyleDutyEntry.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    
+</head>
+<body>
+<div class="maindiv">
+   <div class="topmost"> 
+            <ul> 
+                <li><a href="../pages/logout.php" style="color:red;">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log Out</a></li><br><br>
+                <li><a href="UpdateDB.html" >Duty Records</a></li>
+                    <li><a href="DriverRecord.html">Driver Records</a></li>
+            </ul>
+        </div>
+   <header>
+            <div>
+                <ul>
+                    <div class="logo" style="margin-left:-100px;">
+                    <li><a><img src="../images/logo.jpeg" alt="Al-Safa"></a></li>
+                    </div>  
+                    <li><a href="DutyEntry.html" class="active" >Duty Entry</a></li>
+                    <li><a href="DriverEntry.html" >Register Driver</a></li>
+                    <li><a href="DriverWork.html">Driver's Work</a></li>
+                    <li><a href="Vendor.html" >Vendor Details</a></li>
+                    
+                </ul>
+            </div>
+        </header>
+<!--HTML Form -->
+<div class="form_div">
+<form action="dutyent.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+<h2>Duty Record Entry</h2>
+<label>Customer Name:</label>
+<input class="input" name="customer" type="text" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Company Name:</label>
+<input class="input" name="company" type="text" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Contact No:</label>
+<input class="input" name="contact" type="text" value=""><br>
+<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Driver Name:</label>
+<input class="input" name="driver" type="text" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Cab No.:</label>
+<input class="input" name="cab" type="text" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Pick up:</label>
+<input class="input" name="pick" type="text" value=""><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Drop Off:</label>
+<input class="input" name="dropl" type="text" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Time:</label>
+<input class="input" name="timee" type="text" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Date:</label>
+<input class="input" name="datee" type="date" value="" id="myDate">
+<script>
+                 function myFunction() {
+                var x = document.getElementById("myDate").value;
+                document.getElementById("demo").innerHTML = x;
+                                }
+ </script><br>&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Base Amount:</label>
+<input class="input" name="amt" type="text" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Extra Charges:</label>   
+<input class="input" name="echarges" type="text" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label>Vendor:</label>
+<input class="input" name="vndr" type="text" value="">
+<br>
+<input class="submit" name="submit" type="submit" value="Enter Record">
+<input class="submit" name="reset" type="reset" value="Reset">
+</form>
+</div>
+</div>
+</body>
+</html>

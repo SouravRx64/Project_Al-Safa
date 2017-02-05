@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Al-safa Travels:Database</title>
+    <link rel="icon" href="../images/favicon.jpeg" type="image/jpeg" />
+<link href="../CSS/StyleUpdate.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+</head>
+<body>
+<div class="maindiv">
+    <div class="topmost"> 
+            <ul> 
+                <li><a href="../pages/logout.php" style="color:red;">&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Log Out</a></li><br><br>
+                <li><a href="UpdateDB.html">Duty Records</a></li>
+                    <li><a href="DriverRecord.html" class="active">Driver Records</a></li>
+            </ul>
+        </div>
+   <header>
+            <div>
+                <ul>
+                    <div class="logo" style="margin-left:-100px;">
+                    <li><a><img src="../images/logo.jpeg" alt="Al-Safa"></a></li>
+                    </div>  
+                    <li><a href="DutyEntry.html" >Duty Entry</a></li>
+                    <li><a href="DriverEntry.html" >Register Driver</a></li>
+                    <li><a href="DriverWork.html">Driver's Work</a></li>
+                    <li><a href="Vendor.html" >Vendor Details</a></li>
+                    
+                </ul>
+            </div>
+        </header>
+<!--HTML Form -->
+<div class="form_div">
+
+<form action="driverdir.php" method="post">
+<!-- Method can be set as POST for hiding values in URL-->
+
+<input class="submit" name="submit" type="submit" value="Click To View Driver Records">
+</form>
+</div>
+    
+<br>
+<br>
+    
+    
+ <div class="form_div">   
+<form action="deletedri.php" method="post" style="margin-top:150px;border:1px solid #aaa;
+padding:10px 30px 40px;background-color:#f0f8ff;">
+<!-- Method can be set as POST for hiding values in URL-->
+
+<label>Enter The Entry No. To Delete:</label>
+<input class="input" name="drow" type="text" value=""><br>
+
+<br>
+<input class="submit" name="submit" type="submit" value="Delete">
+</form>
+</div>
+</div>
+</body>
+</html>
