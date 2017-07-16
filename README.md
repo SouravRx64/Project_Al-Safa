@@ -1,2 +1,2 @@
 # Project-Al-Safa
-A full-fledged professional website for maintaining the database &amp; handling multiple user requests for cab booking which helps the owner to handle business in an efficient &amp; organized way.
+A full-fledged professional website for maintaining the database &amp; handling multiple user requests for cab booking which helps the owner to handle business in an efficient &amp; organized way. The Web Application is hosted on GoDaddy and is running on top of AWS EC2 Server. My EC2 server's OS is UNIX(Ubuntu Server 14.04). The EC2 Server was intially installed with LAMP stack to handle my backend PHP code. Apache Web Server efficently handles multiple requests from multiple users(Admin or Customers).
